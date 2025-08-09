@@ -1,0 +1,98 @@
+/* XS small mobiles (max-width:575px) */
+@media (max-width:575px) {
+.sidebar-toggle-btn  .contrast-btn { position: fixed; top: 20px; right: 20px; background: #ffb400; color: #fff; width: 26px; height: 26px; border-radius: 50%; text-align: center; line-height: 40px; font-size: 12px; cursor: pointer; z-index: 1100; }
+.contrast-btn { margin-bottom: 20px; }
+  .hero { flex-direction: column-reverse; text-align: center; padding: 25px 10px; }
+  .hero-left h1, .hero-left span { font-size: 26px; }
+  .hero-left .hero-text { font-size: 14px; }
+  .hero-right img { max-width: 100%; margin-top: 15px; }
+  .service-box, .pricing-box, .tbox { padding: 20px 12px; }
+  .portfolio-grid { grid-template-columns: repeat(1,1fr); gap: 12px; }
+  .logos img { width: 150px !important; height: 150px !important; margin:0 20px; padding: 0 !important}
+  footer p { font-size: 14px; }
+}
+
+/* SM large mobiles (576px–767px) */
+@media (min-width:576px) and (max-width:767px) {
+  .hero { flex-direction: column-reverse; text-align: center; padding: 30px 15px; }
+  .hero-left h1, .hero-left span { font-size: 30px; }
+  .hero-left .hero-text { font-size: 15px; }
+  .hero-right img { max-width: 90%; margin-top: 20px; }
+  .service-box, .pricing-box, .tbox { padding: 25px 15px; }
+  .portfolio-grid { grid-template-columns: repeat(1,1fr); gap: 14px; }
+  .logos img {margin:0 20px; padding:0 !important }
+}
+
+/* MD tablets (768px–991px) */
+@media (min-width:768px) and (max-width:991px) {
+  .hero { flex-direction: column-reverse !important; text-align: center; padding: 40px 20px; }
+  .hero-left h1, .hero-left span { font-size: 36px; }
+  .hero-left .hero-text { font-size: 16px; }
+  .hero-right img { max-width: 85%; margin-top: 20px; }
+  .hero-left, .hero-right { width: 100%; }
+  .hero-right img { max-width: 100%; height: auto; }
+  .right-navbar { transform: translateX(100%);}
+  #menu-toggle:checked ~ .right-navbar { transform: translateX(0%);}
+  .hero { padding-right: 70px; /* Sidebar-er Width er jonne space */}
+
+  .service-box, .pricing-box, .tbox { padding: 30px 18px; }
+  .portfolio-grid { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .logos img { width: 110px !important; height: 110px !important; padding:0 !important }
+  .blog .blog-list { flex-direction: column; align-items: center; }
+  .blog .post { max-width: 100%; }
+}
+
+/* LG laptops (992px–1199px) */
+@media (min-width:992px) and (max-width:1199px) {
+  .hero { flex-direction: row; padding: 50px 20px; padding-bottom:0 !important; }
+  .hero-left h1, .hero-left span { font-size: 42px; }
+  .hero-left .hero-text { font-size: 17px; }
+  .hero-right img { max-width: 90%; }
+  .service-box, .pricing-box, .tbox { padding: 35px 20px; }
+  .portfolio-grid { grid-template-columns: repeat(3,1fr); gap: 18px; }
+  .logos { justify-content: center; gap: 80px; }
+  .logos img { width: 120px !important; height: 120px !important; padding:0 !important }
+}
+
+/* XL desktops (1200px–1399px) */
+@media (min-width:1200px) and (max-width:1399px) {
+  .hero-left h1, .hero-left span { font-size: 48px; }
+  .hero-left .hero-text { font-size: 18px; }
+  .hero { padding: 60px 30px; flex-direction: row; display: flex; align-items: center; justify-content: space-between; }
+  .hero-left, .hero-right { flex: 1; }
+  .hero-right { order: 2; width: 100%; : center; margin-bottom: 20px; }
+  .hero-left { order: 1; width: 100%; }
+  .hero-right img { max-width: 100%; margin: 0 auto; padding-bottom:0 !important }
+  .right-navbar { height: 100vh; width: 0; overflow: hidden; transition: width 0.3s ease; }
+  .right-navbar.active { width: 200px; overflow-y: auto; }
+  .service-box, .pricing-box, .tbox { padding: 40px 25px; }
+  .portfolio-grid { grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .logos img { width: 140px; height: 140px; padding:0 !important } 
+}
+
+/* XXL large desktops (min-width:1400px) */
+@media (min-width:1400px) {
+  .hero-left h1, .hero-left span { font-size: 48px; }
+  .hero-left .hero-text { font-size: 20px; }
+  .pricing-box, .tbox { padding: 50px 30px; }
+  .portfolio-grid { gap: 24px; }
+  .logos img { width: 100%; padding: 0 !important}
+  .hero { flex-direction: row; }
+}
+
+/* Global adjust for small screens */
+@media (max-width:991px) {
+  .btn-primary, .btn-order, .pbtn { padding: 10px 24px; font-size: 14px; }
+  section h2 { font-size: 26px; }
+  .pricing-price { font-size: 28px; }
+}
+
+/* Prevent overflow on very small screens */
+@media (max-width:420px) {
+  .hero-left h1, .hero-left span { font-size: 24px; }
+  .hero-left .hero-text { font-size: 13px; }
+  .logos img { width: 100px !important; height: 100px !important; margin:0 20px; }
+}
+
+/* Extra: fix body horizontal scroll */
+body { overflow-x: hidden; }
